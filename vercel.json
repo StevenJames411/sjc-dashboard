@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/dashboard", "destination": "/api/dashboard" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/login.html" }
+  ]
+}
