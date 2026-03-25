@@ -283,7 +283,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .progress-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
   .progress-bar { flex: 1; height: 6px; background: #1f2937; border-radius: 3px; overflow: hidden; }
   .progress-fill { height: 100%; border-radius: 3px; transition: width 0.3s ease; }
-  .progress-label { font-size: 11px; color: #6b7280; white-space: nowrap; }
+  .progress-label { font-size: 11px; color: #ffffff; white-space: nowrap; }
   .card { background: #111827; border: 1px solid #1f2937; border-radius: 10px; overflow: hidden; }
   .card-body { padding: 4px 0; }
   .check-row { display: flex; align-items: flex-start; gap: 10px; padding: 9px 14px; border-bottom: 1px solid #1a2332; transition: background 0.1s; flex-wrap: wrap; }
@@ -303,7 +303,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .client-card { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   .client-left { flex: 1; }
   .client-name { font-size: 15px; font-weight: 700; color: #f9fafb; }
-  .client-type { font-size: 11px; color: #6b7280; margin-top: 3px; }
+  .client-type { font-size: 11px; color: #ffffff; margin-top: 3px; }
   .client-right { display: flex; align-items: center; gap: 16px; }
   .client-metric { text-align: right; }
   .client-val { font-size: 20px; font-weight: 700; }
@@ -343,13 +343,13 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .offer-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
   .offer-sum-card { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 18px; }
   .offer-sum-card.primary { border-color: #4d6e00; }
-  .offer-sum-label { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #6b7280; margin-bottom: 6px; }
+  .offer-sum-label { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #ffffff; margin-bottom: 6px; }
   .offer-sum-card.primary .offer-sum-label { color: #8aaa00; }
   .offer-sum-title { font-size: 17px; font-weight: 700; color: #f9fafb; margin-bottom: 4px; }
-  .offer-sum-price { font-size: 12px; color: #6b7280; }
+  .offer-sum-price { font-size: 12px; color: #ffffff; }
   .offer-sum-card.primary .offer-sum-price { color: #c8ff00; }
   .funnel-mini { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 14px 18px; display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 24px; flex-wrap: wrap; }
-  .funnel-mini-step { font-size: 12px; color: #9ca3af; font-weight: 500; }
+  .funnel-mini-step { font-size: 12px; color: #ffffff; font-weight: 500; }
   .funnel-mini-arrow { font-size: 11px; color: #374151; }
   .task-cards { display: flex; flex-direction: column; gap: 8px; padding: 4px 0; }
   .task-card { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; cursor: default; transition: border-color 0.15s, opacity 0.2s; }
@@ -363,7 +363,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .task-card.done .tc-ring { background: #0a0a0a; }
   .tc-body { flex: 1; min-width: 0; }
   .tc-title { font-size: 14px; color: #e5e7eb; line-height: 1.4; font-weight: 500; }
-  .tc-note { font-size: 11px; color: #6b7280; margin-top: 3px; line-height: 1.4; }
+  .tc-note { font-size: 11px; color: #ffffff; margin-top: 3px; line-height: 1.4; }
   @media (min-width: 768px) {
     .tc-title { font-size: 15px; }
     .tc-note { font-size: 13px; }
