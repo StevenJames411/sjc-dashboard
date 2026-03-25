@@ -69,7 +69,8 @@ module.exports = async (req, res) => {
   const stateToken = process.env.DASHBOARD_PASSWORD;
   const now = new Date().toLocaleString('en-US', {
     month: 'short', day: 'numeric', year: 'numeric',
-    hour: 'numeric', minute: '2-digit', hour12: true
+    hour: 'numeric', minute: '2-digit', hour12: true,
+    timeZone: 'America/Chicago'
   }).replace(',', ' ·');
 
   // Fetch Google Sheets data
