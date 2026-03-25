@@ -271,10 +271,10 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .snapshot { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
   .snap-card { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 14px; text-align: center; }
   .snap-card .val { font-size: 24px; font-weight: 700; color: #f9fafb; }
-  .snap-card .lbl { font-size: 11px; color: #6b7280; margin-top: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .snap-card .lbl { font-size: 11px; color: #ffffff; margin-top: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
   .section { margin-bottom: 24px; }
   .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; cursor: pointer; user-select: none; }
-  .section-title { font-size: 13px; font-weight: 600; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.8px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #ffffff; text-transform: uppercase; letter-spacing: 0.8px; }
   .section-badge { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
   .badge-blue   { background: #1e3a5f; color: #60a5fa; }
   .badge-green  { background: #14532d; color: #4ade80; }
@@ -307,7 +307,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .client-right { display: flex; align-items: center; gap: 16px; }
   .client-metric { text-align: right; }
   .client-val { font-size: 20px; font-weight: 700; }
-  .client-lbl { font-size: 10px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; }
+  .client-lbl { font-size: 10px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; }
   .client-probono { font-size: 10px; color: #f59e0b; margin-top: 2px; }
   .client-divider { width: 1px; height: 36px; background: #1f2937; }
   @media (min-width: 768px) {
