@@ -319,7 +319,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .feature-card { border: 1px solid #1f2937; border-radius: 12px; padding: 20px; text-align: center; margin-bottom: 14px; }
   .feature-pct { font-size: 48px; font-weight: 800; line-height: 1; letter-spacing: -2px; }
   .feature-title { font-size: 16px; font-weight: 600; color: #f9fafb; margin-top: 6px; }
-  .feature-sub { font-size: 12px; color: #e5e7eb; margin-top: 4px; }
+  .feature-sub { font-size: 12px; color: #e5e7eb !important; margin-top: 4px; }
   @media (min-width: 768px) {
     .feature-pct { font-size: 64px; }
     .feature-title { font-size: 20px; }
