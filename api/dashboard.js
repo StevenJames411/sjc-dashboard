@@ -199,6 +199,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
     <div class="tc-title" contenteditable="true">${label}</div>
     <div class="tc-note" contenteditable="true">${note}</div>
   </div>
+  <button class="delete-task-btn" onclick="deleteBuiltinTask(this)">×</button>
 </div>`;
     }
     out += `</div><button class="add-task-btn" onclick="addCustomTask('cards-${sectionId}')">+ Add Task</button>`;
@@ -318,7 +319,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .feature-card { border: 1px solid #1f2937; border-radius: 12px; padding: 20px; text-align: center; margin-bottom: 14px; }
   .feature-pct { font-size: 48px; font-weight: 800; line-height: 1; letter-spacing: -2px; }
   .feature-title { font-size: 16px; font-weight: 600; color: #f9fafb; margin-top: 6px; }
-  .feature-sub { font-size: 12px; color: #9ca3af; margin-top: 4px; }
+  .feature-sub { font-size: 12px; color: #e5e7eb; margin-top: 4px; }
   @media (min-width: 768px) {
     .feature-pct { font-size: 64px; }
     .feature-title { font-size: 20px; }
@@ -352,7 +353,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
   .funnel-mini-arrow { font-size: 11px; color: #374151; }
   .task-cards { display: flex; flex-direction: column; gap: 8px; padding: 4px 0; }
   .task-card { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; cursor: default; transition: border-color 0.15s, opacity 0.2s; }
-  .task-card.done { opacity: 0.45; }
+  .task-card.done { opacity: 1; }
   .drag-handle { color: #374151; font-size: 16px; cursor: grab; padding-top: 2px; flex-shrink: 0; user-select: none; }
   .drag-handle:active { cursor: grabbing; }
   .tc-check { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #374151; flex-shrink: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; margin-top: 2px; transition: border-color 0.15s, background 0.15s; }
@@ -654,6 +655,18 @@ function addCustomTask(containerId) {
   el.querySelector('.tc-title').focus();
   scheduleSync();
 }
+function deleteBuiltinTask(btn) {
+  const card = btn.closest('.task-card');
+  const section = card.closest('.section');
+  const id = card.dataset.id;
+  localStorage.removeItem('task-' + id);
+  localStorage.removeItem('text-' + id);
+  localStorage.removeItem('note-' + id);
+  card.remove();
+  updateProgress(section);
+  scheduleSync();
+}
+
 function deleteCustomTask(btn, containerId) {
   const card = btn.closest('.task-card');
   const id = card.dataset.id;
