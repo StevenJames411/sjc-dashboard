@@ -253,7 +253,7 @@ function buildDashboard({ now, monthlyRetainer, ltv, stateToken }) {
     margin-bottom: 20px;
   }
   .header h1 { font-size: 20px; font-weight: 700; color: #f9fafb; letter-spacing: -0.3px; }
-  .header .sub { font-size: 11px; color: #6b7280; margin-top: 4px; }
+  .header .sub { font-size: 11px; color: #ffffff; margin-top: 4px; }
   .logout-btn {
     position: absolute;
     top: 20px;
